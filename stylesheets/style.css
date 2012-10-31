@@ -1,24 +1,57 @@
 body{
 	
 }
-
+/*
+Lay out
+*/
 #wrapper{
-	width:901px;
-	height:400px;
+	width:903px;
+	
 	margin-left:auto;
 	margin-right:auto;
 }
-/*
-header styles
-*/
+
 #header{
 	height:161px;
 }
 #navbar{
-background-image:url("../images/Elements/navbar.jpg");
-background-repeat:repeat-x;
+	background-image:url("../images/Elements/navbar.jpg");
+	background-repeat:repeat-x;
 	height:37px;
-	border:solid 1px #000;
-	width:901px;
+	width:903px;
+	}
+/*
+login
+*/
+#signin-frame{
+	margin-top:60px;
+	margin-bottom:180px;
+	height:181px;
+	width:354px;
+	margin-right:50px;
+	float:right;
+	
 }
+#signin-form{
+	
+	background-color:#cccccc;
+	margin-left:auto;
+	margin-right:auto;
+	width:336px;
+	height:148px;
+	border-radius:0px 0px 15px 15px;
+
+
+	}
+#sign-in-controlls{
+	padding:10px;
+	margin-left:30px;
+	
+	
+}
+
+
+	
+
+
 
