@@ -4,7 +4,6 @@
 		
 	</head>
 	<body>
-		asd
 		<cfoutput>#includeContent()#</cfoutput>
 	</body>
 </html>
