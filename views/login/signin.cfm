@@ -14,13 +14,17 @@
 			<tr>
 			#textField(label="Password:",objectName="user",property="password",prependToLabel="<td>",appendToLabel="</td>", prepend="<td>",append="</td>")#
 			</tr>
-			#endFormTag()#
-			
-			
-			
-			
-			
+			<tr>
+				
+				<td>#linkTo(text="Forgot password?",controller="user",action="forgot")#</td>
+				<td align="right">#submitTag(image="../images/Elements/sign-in-button.png")#</td>
+			</tr>
+				#endFormTag()#
+		
 			</table>
+			<br/>
+			
+			
 			
 		</cfoutput>
 		

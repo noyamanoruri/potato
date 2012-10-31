@@ -4,4 +4,17 @@
 	Do not delete this file.
 --->
 <cfcomponent extends="Wheels">
+	
+	<cffunction name="init">
+		<cfset filters(through="checkLogin", except="signin,authenticate,bulletine")>
+		
+		
+	</cffunction>
+	
+	<cffunction name="checkLogin">
+		<cfif not structKeyExists(session,"username")>
+			<cfset redirectTo(controller="login", action="signin")>
+		</cfif>
+		
+	</cffunction>
 </cfcomponent>
