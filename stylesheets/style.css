@@ -1,0 +1,24 @@
+body{
+	
+}
+
+#wrapper{
+	width:901px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*
+header styles
+*/
+#header{
+	height:161px;
+}
+#navbar{
+background-image:url("../images/Elements/navbar.jpg");
+background-repeat:repeat-x;
+	height:37px;
+	border:solid 1px #000;
+	width:901px;
+}
+
