@@ -12,7 +12,7 @@
 	</cffunction>
 	
 	<cffunction name="checkLogin">
-		<cfif not structKeyExists(session,"username")>
+		<cfif not structKeyExists(session,"user")>
 			<cfset redirectTo(controller="login", action="signin")>
 		</cfif>
 		

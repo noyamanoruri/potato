@@ -30,7 +30,7 @@
 							 
 			</div><!--- end header div --->	
 			
-			<cfoutput>#linkTo(text="logout", controller="Login", action="logout")#</cfoutput>
+			<cfoutput>#linkTo(text="logout", controller="Login", action="signout")#</cfoutput>
 			<div id="content">
 				
 					<cfoutput>#includeContent()#</cfoutput>

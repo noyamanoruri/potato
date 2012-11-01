@@ -22,6 +22,11 @@
 			<cfset renderPage(action="signin")>
 			</cfif>
 			
+	</cffunction>
+	<cffunction name="signout">
+		<cfset structDelete(session,"user")>
+		<cfset redirectTo(action ="signin")>
+		<
 		
 	</cffunction>
 	
