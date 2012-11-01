@@ -10,8 +10,12 @@
 		<cfset user= model("user").findOneByUsernameAndPassword("#params.user.username#,#params.user.password#")>
 		
 		<cfif isObject(user)>
+			<cfif user.type IS "admin">
+				<cfset session.user.type="admin">
+			</cfif>
 			<cfset session.user.username=user.username>
-			<cfset redirectTo(controller="student", action="bulletine")>
+			<cfset redirectTo(controller="SuperAdmin", action="adminhome")>
+			
 		<cfelse>
 			<cfset user=model("user").new()>
 			<cfset flashInsert(error="The username or password that you entered is not valid")>

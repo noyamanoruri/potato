@@ -1,4 +1,5 @@
 ﻿<div id="signin-frame">
+
 	
 	
 	<div id="signin-head">
@@ -23,7 +24,9 @@
 		
 			</table>
 			<br/>
-			
+			<div id="flash">
+				#flash("error")#
+			</div>
 			
 			
 		</cfoutput>
