@@ -1,4 +1,8 @@
 ﻿<cfoutput>
-	<cfdump var="#params#">
-	<cfdump var="#session#">
+
+	
+	<cfset hashed=#Hash(params.user.password,"SHA" )#>
+	
+	#hashed#
+	
 </cfoutput>

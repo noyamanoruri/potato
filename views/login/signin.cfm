@@ -13,7 +13,7 @@
 			#textField(label="Username:",objectName="user",property="username",prependToLabel="<td>",appendToLabel="</td>", prepend="<td>",append="</td>")#
 			</tr>
 			<tr>
-			#textField(label="Password:",objectName="user",property="password",prependToLabel="<td>",appendToLabel="</td>", prepend="<td>",append="</td>")#
+			#passwordField(label="Password:",objectName="user",property="password",prependToLabel="<td>",appendToLabel="</td>", prepend="<td>",append="</td>")#
 			</tr>
 			<tr>
 				

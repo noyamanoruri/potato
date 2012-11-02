@@ -15,4 +15,6 @@
 
 <!--- form helper --->
 
-<cfset set(functionName="textField", labelPlacement="before")>
+<cfset set(functionName="textField", labelPlacement="before", prependToLabel="<tr><td><strong>", appendToLabel="</strong></td>", prepend="<td>", append="</td></tr>")>
+<cfset set(functionName="select", labelPlacement="before", prependToLabel="<tr><td><strong>", appendToLabel="</strong></td>", prepend="<td>", append="</td></tr>")>
+<cfset set(functionName="radioButton", labelPlacement="before", prependToLabel="<tr><td><strong>", appendToLabel="</strong></td>", prepend="<td>", append="</td></tr>")>

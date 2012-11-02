@@ -6,9 +6,10 @@
 	
 	
 	<cffunction name="authenticate">
+		<cfset hashed=#Hash(params.user.password,"SHA" )#>
 		
-		<cfset user= model("user").findOneByUsernameAndPassword("#params.user.username#,#params.user.password#")>
-		
+		<cfset user= model("user").findOneByUsernameAndPassword("#params.user.username#,#hashed#")>
+	
 		<cfif isObject(user)>
 			<cfif user.type IS "admin">
 				<cfset session.user.type="admin">
@@ -26,7 +27,7 @@
 	<cffunction name="signout">
 		<cfset structDelete(session,"user")>
 		<cfset redirectTo(action ="signin")>
-		<
+	
 		
 	</cffunction>
 	

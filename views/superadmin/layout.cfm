@@ -6,6 +6,9 @@
 	</head>
 	<body>
 		<div id="wrapper">
+			<div style="float:right">
+			<cfoutput>#session.user.username# #linkTo(text="Logout", controller="Login", action="signout")#</cfoutput>
+			</div>
 			<div id="header">
 				<div id="banner">
 					<img src="../../images/Elements/banner.png" >
@@ -13,10 +16,10 @@
 				<div id='cssmenu'>
 					<cfoutput>
 					<ul>
-			   <li><a href='##'><span>Home</span></a></li>
+			 		<li>#linkTo(text="<span>Home</span>", action="adminHome")#</li>
 					   <li class="has-sub"><a href='##'><span>Accounts</span></a>
 					      <ul>
-							<li>#linkTo(text="<span>Admin</span>", action="accountadmin")#</li>
+							<li>#linkTo(text="<span>Admin</span>", action="accountAdmin")#</li>
 							 <li>#linkTo(text="<span>Student</span>", action="accountstudent")#</li>
 							 <li>#linkTo(text="<span>Faculty</span>", action="accountfaculty")#</li>
 							 <li>#linkTo(text="<span>Staffs</span>", action="accountstaff")#</li>
@@ -30,7 +33,7 @@
 							 
 			</div><!--- end header div --->	
 			
-			<cfoutput>#linkTo(text="logout", controller="Login", action="signout")#</cfoutput>
+			
 			<div id="content">
 				
 					<cfoutput>#includeContent()#</cfoutput>
